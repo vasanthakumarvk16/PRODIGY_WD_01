@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+section:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+/* Default style for paragraphs */
+section p {
+    font-size: 16px;
+    color: #000;
+}
+
+/* Style for paragraphs in the active section */
+section.active p {
+    font-size: 20px;
+    color: #007BFF;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
